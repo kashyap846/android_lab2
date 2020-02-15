@@ -84,7 +84,6 @@ public class ListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 TextView breed = view.findViewById(R.id.breed_name);
-                Log.e("onItemClick: sdcsdcsd","sdcsdccd" );
                 Intent intent = new Intent(ListActivity.this, ImageActivity.class);
                 intent.putExtra("breed", breed.getText().toString());
                 startActivity(intent);
